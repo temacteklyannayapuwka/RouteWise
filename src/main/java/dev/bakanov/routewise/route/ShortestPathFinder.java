@@ -1,6 +1,7 @@
 package dev.bakanov.routewise.route;
 
 import dev.bakanov.routewise.road.Road;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +13,7 @@ import java.util.Optional;
 import java.util.PriorityQueue;
 import java.util.UUID;
 
+@Component
 public class ShortestPathFinder {
 
     public Optional<RoutePath> find(List<Road> roads, UUID fromCityId, UUID toCityId) {
